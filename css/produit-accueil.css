@@ -1,0 +1,220 @@
+.general {
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 66px;
+}
+
+.sectionAccueil {
+  height: 555px !important;
+}
+
+.informations {
+  width: 444px;
+  height: 777px;
+  border-radius: 12px;
+  margin: 0 55px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  padding: 22px;
+}
+
+.informations p img {
+  width: 350px;
+}
+
+.informations p iframe {
+  width: 350px;
+  margin: 0 55px;
+}
+
+/* La feuille de style  de la déviation background */
+.productParent {
+  position: relative;
+  width: 450px;
+  height: 500px !important;
+
+  text-align: center;
+  margin-bottom: 66px;
+  text-align: center;
+}
+
+.productParent div {
+  width: 500px;
+  height: 500px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 99px;
+  display: none;
+  transition: all 0.5s ease-out;
+  transition: transform 1s;
+  transition: opacity 0.5s;
+  z-index: 1;
+  border-radius: 9px;
+  object-fit: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-bottom: 66px;
+  margin-top: 88px;
+}
+
+.productParent div img {
+  width: 444px !important;
+  border: 1px solid black;
+  height: 300px;
+  border-radius: 9px;
+  padding: 4px;
+
+  margin-top: 66px;
+}
+
+.productParent div h2 a {
+  text-decoration: none;
+}
+
+.productParent div h2 a:hover {
+  text-decoration: underline;
+}
+
+/* la classe active des les image de arrière-plan */
+
+.productParent div.active {
+  display: block;
+}
+
+#right,
+#left {
+  z-index: 665;
+  color: rgb(62, 12, 243);
+  font-size: 3rem;
+  position: absolute;
+  top: 66%;
+  transform: translateY(-200%);
+}
+
+#left:hover {
+  color: rgb(232, 224, 224);
+}
+
+#right:hover {
+  color: rgb(232, 224, 224);
+}
+
+#right {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#left {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 840px) {
+  .productParent {
+    width: 450px;
+    height: 500px;
+  }
+
+  .productParent div {
+    width: 500px;
+    height: 500px !important;
+  }
+
+  .productParent div img {
+    width: 444px !important;
+    height: 300px;
+  }
+
+  .informations {
+    width: auto;
+    margin: 0 11px;
+  }
+
+  .sectionAccueil {
+    margin: 11px;
+    padding: 0;
+    height: 999px !important;
+  }
+}
+
+@media only screen and (max-width: 840px) and (min-width: 200px) {
+  .productParent {
+    width: 450px;
+    height: 500px;
+    margin: 22px auto;
+  }
+
+  .productParent div {
+    top: -110px;
+    width: 450px !important;
+    height: 500px;
+  }
+
+  .productParent div img {
+    width: 444px !important;
+    height: 300px;
+  }
+
+  .informations {
+    display: none;
+  }
+
+  #right,
+  #left {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 789px) and (min-width: 200px) {
+  .productParent {
+    width: 450px !important;
+    height: 700px;
+    margin-bottom: 66px !important;
+  }
+
+  .productParent div {
+    width: 450px !important;
+    height: 800px;
+    margin-bottom: 66px !important;
+  }
+
+  .productParent div img {
+    width: 444px !important;
+    height: 300px;
+    margin-bottom: 66px !important;
+  }
+}
+
+@media only screen and (max-width: 530px) and (min-width: 200px) {
+  .productParent {
+    width: 300px !important;
+    height: 200px;
+    margin-bottom: 66px !important;
+  }
+
+  .productParent div {
+    width: 300px !important;
+    height: 200px;
+    margin-bottom: 66px !important;
+  }
+
+  .productParent div img {
+    width: 300px !important;
+    height: 200px;
+    margin-bottom: 66px !important;
+  }
+
+  #right,
+  #left {
+    top: 30%;
+  }
+
+  #left {
+    padding: 3px;
+  }
+}

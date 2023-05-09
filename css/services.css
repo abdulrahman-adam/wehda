@@ -1,0 +1,18 @@
+.serviceParent {
+  margin: 44px;
+}
+.serviceParent1 {
+  width: 666px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #ebe6e6;
+  margin: 11px auto;
+  text-align: center;
+  padding: 22px;
+  border-radius: 11px;
+}
+
+@media only screen and (max-width: 865px) and (min-width: 200px) {
+  .serviceParent1 {
+    width: auto;
+  }
+}

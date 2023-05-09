@@ -1,0 +1,8 @@
+@media only screen and (max-width: 789px) and (min-width: 200px) {
+  .startInformation {
+    width: auto;
+  }
+  .startInformation p {
+    width: auto;
+  }
+}

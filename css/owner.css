@@ -1,0 +1,100 @@
+.wrapper11 {
+  /* width: 200px; */
+  margin: 33px auto;
+  /* border: 4px solid #eb1c49; */
+  /* overflow-x: hidden; */
+  background-color: hsl(210, 60%, 98%);
+  position: relative;
+
+  height: 336px;
+  border-radius: 11px;
+}
+
+.wrapper11 div {
+  padding: 4px;
+  width: 400px;
+  margin: 3px auto;
+  border-radius: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.wrapper11 div.active99 {
+  opacity: 1;
+}
+.owner img {
+  border: 1px solid black;
+  border-radius: 9px;
+  width: 400px;
+  height: 200px;
+  padding: 6px;
+}
+
+@media only screen and (max-width: 530px) and (min-width: 200px) {
+  .wrapper11 div {
+    width: 390px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper11 {
+    width: auto;
+
+    text-align: center;
+  }
+
+  .owner img {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+.test {
+  /* width: 200px; */
+  margin: auto;
+  /* border: 4px solid #eb1c49; */
+  /* overflow-x: hidden; */
+  background-color: #f1efef;
+  padding: 3px;
+  margin: 22px 0;
+}
+
+.testP {
+  color: red;
+  font-weight: bold;
+  animation-name: rightToLeft;
+  animation-duration: 19.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
+}
+
+@media only screen and (max-width: 530px) and (min-width: 200px) {
+  .test {
+    width: auto;
+    margin-top: 77px;
+    text-align: center;
+  }
+
+  .testP {
+    color: red;
+    font-weight: bold;
+    animation-name: rightToLeft;
+    animation-duration: 5.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: rightToLeft 4.5s linear infinite; */
+  }
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(340px);
+    }
+    100% {
+      transform: translateX(-260px);
+    }
+  }
+}

@@ -1,0 +1,122 @@
+/* La section du background */
+
+/* La feuille de style  de l'animation titre a gauche à droite */
+
+.target {
+  margin: 3px;
+  font-weight: bold;
+  color: red;
+  font-size: 22px;
+  animation-name: rightToLeft;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(-160px);
+  }
+}
+
+.target1 {
+  margin: 3px;
+  font-weight: bold;
+  color: red;
+  font-size: 22px;
+  animation-name: leftToRight;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(1400px);
+  }
+}
+
+/* La feuille de style  de la déviation background */
+.backgroundParent {
+  position: relative;
+  width: 800px;
+  height: 300px;
+
+  text-align: center;
+  margin: 66px auto;
+}
+
+.backgroundParent img {
+  width: 800px !important;
+  height: 300px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+  /* border: 3px solid red; */
+
+  object-fit: none;
+}
+
+/* la classe active des les image de arrière-plan */
+
+.backgroundParent img.active1 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 200px) {
+  .backgroundParent {
+    width: 800px;
+    height: 300px;
+  }
+
+  .backgroundParent img {
+    width: 800px !important;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 840px) and (min-width: 200px) {
+  .backgroundParent {
+    width: 700px !important;
+    height: 300px;
+  }
+
+  .backgroundParent img {
+    width: 700px !important;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 789px) and (min-width: 200px) {
+  .backgroundParent {
+    width: 500px !important;
+    height: 200px !important;
+    margin-top: 76px;
+  }
+
+  .backgroundParent img {
+    width: 500px !important;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 531px) and (min-width: 200px) {
+  .backgroundParent {
+    width: 300px !important;
+    height: 200px;
+  }
+
+  .backgroundParent img {
+    width: 300px !important;
+    height: 200px;
+  }
+}
